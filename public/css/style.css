@@ -1,0 +1,115 @@
+body {font-family: 'Open Sans', sans-serif;
+  display: grid;
+
+  
+  ;}
+
+.sidebar {
+  height: 100%;
+  width: 20%;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: #c4c4c4;
+  padding-top: 16px;
+}
+hr
+{
+  border-color: black;
+}
+.sidebar p {
+  padding: 8px 8px 0px 16px;
+  text-decoration: none;
+  font-size: 20px;
+  display: block;
+  margin: 10px;
+  overflow: hidden;
+}
+.darkColor
+{
+  color: white;
+}
+#NewNote
+{
+  padding: 8px;
+  margin: 22px 8px 3px 16px;
+  text-decoration: none;
+  font-size: 20px;
+  background-color: #5D987C;
+  color: #ECE8E8;
+  border-radius: 12px;
+  grid-area: new;
+}
+
+#Mode
+{
+  padding: 8px;
+  /* /* padding-right: 40px; */
+  margin: 22px 8px 3px 74%;  
+  text-decoration: none;
+  font-size: 20px;
+  color: white;
+  background-color: #656565;
+  border-radius: 12px;
+  grid-area: mode;
+
+}
+
+
+.main {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  grid-template-rows: 0.25fr 2fr 0.25fr ;
+  grid-template-areas: 
+  'new . . . mode'
+  'text text text text text'
+  'save cancel . . .';
+  margin-left: 20%;
+  padding: 0px 10px;
+  justify-items: center;
+  overflow: hidden;
+}
+
+textarea
+{
+  resize: none;
+  margin: 20px;
+  width: 95%;
+  height: 330px;
+  font-size: 20px;
+  font-family: "Lato", sans-serif;
+  grid-area: text;
+
+}
+#save
+{
+  background-color: #5D987C;
+  color: #ECE8E8;
+  grid-area: save;
+  place-self: center;
+}
+#cancel
+{
+
+  background-color: #BA6262;
+  color: #ECE8E8;
+  grid-area: cancel;
+  place-self: start;
+}
+button
+{
+  padding: 8px;
+  /* padding-right: 5%;
+  margin: 20px;
+  margin-top: 10px; */ 
+
+  text-decoration: none;
+  font-size: 20px;
+  border-radius: 12px;
+}
+.hide
+{
+  display: none;
+}
+
